@@ -168,8 +168,8 @@
       </div>
     </nav>
 <?php endif; ?>
-    <!-- Open section -->
-    <section class="bg-dark d-flex min-vh-100">
+     <!-- Open section -->
+     <section class="bg-dark d-flex min-vh-100">
         <div class="container hee">
             <div class="p-4"></div>
             <img src="/uf.png" class="img-fluid  mx-auto d-block mt-5 pt-5" alt="" style="width: 200px;">
@@ -179,9 +179,26 @@
             <p class="lead mt-5 text-white text-center">
               <i class="bi bi-envelope"></i> info@promix-uf.se
             </p>
-            <p class="lead text-white text-center">
-              <i class="bi bi-wrench"></i> Formulär på väg
-            </p>
+            <form action="" method="post">
+                <?php if($message['contact_sent']): ?>
+
+                  <div class="alert alert-success w-50 mx-auto" style="border-top-width: 5px;">
+                              <i class="bi bi-check-circle-fill"></i> <?php echo $message['contact_sent']; ?>
+                        </div>
+                        <?php endif; ?>
+                            <div class="form-floating w-50 mx-auto">
+                                <input type="text" id="topic" class="form-control <?php if($errors['empty_topic'] or $errors['topic_long']): ?><?php echo 'is-invalid'; ?><?php endif; ?>" name="topic_contact">
+                                <label for="topic" class="text-dark">Ämne</label>
+                                <div id="1" class="invalid-feedback">                            <?php echo $errors['empty_topic']; echo $errors['topic_long']; ?></div>
+                            </div>
+                            <div class="form-floating w-50 mx-auto">
+                        <textarea rows="5" style="height: 100%;" name="message_contact" type="text" class="form-control mt-3 <?php if($errors['empty_message'] or $errors['message_long']): ?><?php echo 'is-invalid'; ?><?php endif; ?>"></textarea>
+                            <label class="text-dark" for="bio">Meddelande</label>
+                        <div id="2" class="invalid-feedback">
+                            <?php echo $errors['empty_message']; echo $errors['message_long']; ?>
+                        </div>
+                        <button type="submit" name="message_btn" href="" class="btn coolbtn btn-lg btn-danger mt-4">Skicka meddelande</button>
+            </form>
             </div>
     </section>
 
