@@ -598,7 +598,7 @@ if (isset($_POST['checkout_end'])){
     $wow = $conn->query($amazingquery);
     $amazingquery2 = "UPDATE checkout SET checkedout=1 WHERE user_id='$cool' AND randomkey='$shooom'";
     $wow2 = $conn->query($amazingquery2);
-    $message['successfully_ordered'] = "Du har nu lagt en order, titta efter mejl för kvitto och mer";
+    $_SESSION['cool_order'] = "Du har nu beställt, titta i din mejl varukorg för kvitto och mer information.";
     header("location: https://promix-uf.se/shop");
 
 

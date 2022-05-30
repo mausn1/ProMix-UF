@@ -176,9 +176,9 @@
     </nav>
 <?php endif; ?>
 <div class="p-5 bg-dark"></div>
-<?php if($message['successfully_ordered']): ?>
+<?php if($_SESSION['cool_order']): ?>
     <div class="alert alert-success alert-dismissible fade show position-absolute w-100 mb-0" role="alert">
-                <i class="bi bi-check-circle-fill"></i> <?php echo $message['successfully_ordered']; ?>
+                <i class="bi bi-check-circle-fill"></i> <?php echo $_SESSION['cool_order']; unset($_SESSION['cool_order']); ?>
       <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 
