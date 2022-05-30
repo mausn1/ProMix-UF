@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /account/authController.php
+Disallow: /account/emailController.php
+Disallow: /account/reciever.php
+Disallow: /account/db.php
+Disallow: /account/constants.php
+Disallow: /account/cronjob.php
+Disallow: /account/error_log
+Disallow: /account/settings/mypage/edit-settings
+Disallow: /account/settings/mypage/change-password
+Sitemap: http://www.promix-uf.se/general.xml

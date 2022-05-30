@@ -1,0 +1,91 @@
+[24-May-2022 23:47:59 UTC] PHP Warning:  mysqli::query(): Empty query in /home/vyjwbfed/public_html/account/authController.php on line 394
+[24-May-2022 23:51:24 UTC] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/vyjwbfed/public_html/account/authController.php on line 390
+[24-May-2022 23:52:32 UTC] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/vyjwbfed/public_html/account/authController.php on line 391
+[24-May-2022 23:56:31 UTC] PHP Warning:  mysqli::query(): Empty query in /home/vyjwbfed/public_html/account/authController.php on line 385
+[24-May-2022 23:56:49 UTC] PHP Warning:  mysqli::query(): Empty query in /home/vyjwbfed/public_html/account/authController.php on line 385
+[25-May-2022 00:17:56 UTC] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/vyjwbfed/public_html/account/authController.php on line 414
+[25-May-2022 00:17:58 UTC] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/vyjwbfed/public_html/account/authController.php on line 414
+[29-May-2022 15:17:54 UTC] PHP Fatal error:  'break' not in the 'loop' or 'switch' context in /home/vyjwbfed/public_html/account/authController.php on line 381
+[29-May-2022 15:18:44 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/vyjwbfed/public_html/account/authController.php on line 377
+[29-May-2022 15:27:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/vyjwbfed/public_html/account/authController.php on line 367
+[29-May-2022 15:27:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/vyjwbfed/public_html/account/authController.php on line 367
+[29-May-2022 17:10:58 UTC] PHP Parse error:  syntax error, unexpected '$errors' (T_VARIABLE) in /home/vyjwbfed/public_html/account/authController.php on line 540
+[29-May-2022 18:12:29 UTC] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/vyjwbfed/public_html/account/authController.php:553
+Stack trace:
+#0 /home/vyjwbfed/public_html/shop/checkout.php(1): include()
+#1 {main}
+  thrown in /home/vyjwbfed/public_html/account/authController.php on line 553
+[29-May-2022 18:12:46 UTC] PHP Fatal error:  Uncaught Error: Cannot pass parameter 2 by reference in /home/vyjwbfed/public_html/account/authController.php:553
+Stack trace:
+#0 /home/vyjwbfed/public_html/shop/checkout.php(1): include()
+#1 {main}
+  thrown in /home/vyjwbfed/public_html/account/authController.php on line 553
+[29-May-2022 19:37:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/vyjwbfed/public_html/account/authController.php:553
+Stack trace:
+#0 /home/vyjwbfed/public_html/shop/checkout.php(1): include()
+#1 {main}
+  thrown in /home/vyjwbfed/public_html/account/authController.php on line 553
+[29-May-2022 19:37:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/vyjwbfed/public_html/account/authController.php:553
+Stack trace:
+#0 /home/vyjwbfed/public_html/shop/checkout.php(1): include()
+#1 {main}
+  thrown in /home/vyjwbfed/public_html/account/authController.php on line 553
+[29-May-2022 19:37:19 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/vyjwbfed/public_html/account/authController.php:553
+Stack trace:
+#0 /home/vyjwbfed/public_html/shop/checkout.php(1): include()
+#1 {main}
+  thrown in /home/vyjwbfed/public_html/account/authController.php on line 553
+[29-May-2022 19:37:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/vyjwbfed/public_html/account/authController.php:553
+Stack trace:
+#0 /home/vyjwbfed/public_html/shop/checkout.php(1): include()
+#1 {main}
+  thrown in /home/vyjwbfed/public_html/account/authController.php on line 553
+[29-May-2022 19:37:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/vyjwbfed/public_html/account/authController.php:553
+Stack trace:
+#0 /home/vyjwbfed/public_html/shop/checkout.php(1): include()
+#1 {main}
+  thrown in /home/vyjwbfed/public_html/account/authController.php on line 553
+[29-May-2022 19:45:49 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/vyjwbfed/public_html/account/authController.php:552
+Stack trace:
+#0 /home/vyjwbfed/public_html/shop/checkout.php(1): include()
+#1 {main}
+  thrown in /home/vyjwbfed/public_html/account/authController.php on line 552
+[29-May-2022 19:47:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/vyjwbfed/public_html/account/authController.php:552
+Stack trace:
+#0 /home/vyjwbfed/public_html/shop/checkout.php(1): include()
+#1 {main}
+  thrown in /home/vyjwbfed/public_html/account/authController.php on line 552
+[29-May-2022 19:47:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/vyjwbfed/public_html/account/authController.php:552
+Stack trace:
+#0 /home/vyjwbfed/public_html/shop/checkout.php(1): include()
+#1 {main}
+  thrown in /home/vyjwbfed/public_html/account/authController.php on line 552
+[29-May-2022 19:47:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/vyjwbfed/public_html/account/authController.php:552
+Stack trace:
+#0 /home/vyjwbfed/public_html/shop/checkout.php(1): include()
+#1 {main}
+  thrown in /home/vyjwbfed/public_html/account/authController.php on line 552
+[29-May-2022 19:48:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home/vyjwbfed/public_html/account/authController.php:552
+Stack trace:
+#0 /home/vyjwbfed/public_html/shop/checkout.php(1): include()
+#1 {main}
+  thrown in /home/vyjwbfed/public_html/account/authController.php on line 552
+[29-May-2022 21:37:19 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vyjwbfed/public_html/account/authController.php:555) in /home/vyjwbfed/public_html/account/authController.php on line 560
+[29-May-2022 21:48:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/vyjwbfed/public_html/account/authController.php:556) in /home/vyjwbfed/public_html/account/authController.php on line 561
+[29-May-2022 23:30:26 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/vyjwbfed/public_html/account/authController.php on line 610
+[29-May-2022 23:30:29 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/vyjwbfed/public_html/account/authController.php on line 610
+[29-May-2022 23:30:50 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/vyjwbfed/public_html/account/authController.php on line 610
+[29-May-2022 23:30:51 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/vyjwbfed/public_html/account/authController.php on line 610
+[29-May-2022 23:30:52 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/vyjwbfed/public_html/account/authController.php on line 610
+[29-May-2022 23:30:52 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/vyjwbfed/public_html/account/authController.php on line 610
+[29-May-2022 23:30:58 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/vyjwbfed/public_html/account/authController.php on line 610
+[29-May-2022 23:30:59 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/vyjwbfed/public_html/account/authController.php on line 610
+[29-May-2022 23:30:59 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/vyjwbfed/public_html/account/authController.php on line 610
+[29-May-2022 23:30:59 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/vyjwbfed/public_html/account/authController.php on line 610
+[29-May-2022 23:30:59 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/vyjwbfed/public_html/account/authController.php on line 610
+[29-May-2022 23:32:01 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/vyjwbfed/public_html/account/authController.php on line 610
+[29-May-2022 23:32:02 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/vyjwbfed/public_html/account/authController.php on line 610
+[29-May-2022 23:32:31 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/vyjwbfed/public_html/shop/index.php on line 186
+[29-May-2022 23:32:32 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/vyjwbfed/public_html/shop/index.php on line 186
+[29-May-2022 23:32:35 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/vyjwbfed/public_html/shop/index.php on line 186
+[29-May-2022 23:33:00 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/vyjwbfed/public_html/shop/index.php on line 186

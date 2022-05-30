@@ -1,0 +1,141 @@
+.hee{
+    position: relative;
+    animation-name: example;
+    animation-duration: 3s;  
+    animation-fill-mode: both;
+    animation-delay: 0s;
+  }
+  
+@keyframes example {
+    from {opacity: 0; left: -200px;}
+    to {opacity: 1; left: 0px;}
+  }
+
+.img-fluid {
+    max-width: 90%;
+    height: auto;
+}
+
+
+.carousel-control-next,
+.carousel-control-prev  {
+    filter: invert(100%);
+}
+
+.carousel-indicators{
+  filter: invert(100%);
+}
+
+
+@media (max-width: 991px){
+  .col-margin{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }  
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+  background-color: #8f3636 ;
+
+}
+
+.dropdown-menu-dark .dropdown-item.active, .dropdown-menu-dark .dropdown-item:active {
+  color: #fff;
+  background: #8f3636 !important;
+}
+
+.btn-close:focus {
+  box-shadow: 0 0 0 0.25rem rgba(41, 58, 56, 0.28);
+}
+
+
+.a {
+    transition: transform 0.2s;
+}
+
+.a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.z {
+    transition: transform 0.2s;
+}
+
+.z:hover {
+  transform: scale(1.02);
+}
+
+.ayyy {
+    transition: transform 0.2s;
+}
+
+.ayyy:hover {
+      transform: scale(1.50);
+     
+}
+.coolbtn {
+    color: #fff;
+    border: 0px ;
+    box-shadow: 0 3px 0 #9b2e2e;
+}
+
+.rotate {
+animation: rotation 3s  linear;
+    
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.cooltext {
+    background: -webkit-linear-gradient(#7e67f0 1%,#cd3a3e 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #fff0;
+}
+
+.aza{
+    background: #24282d ;
+}
+
+.AaA {
+    position: relative;
+    right: 2rem;
+}
+
+.aja{
+    background: #24282d ;
+}
+
+.aja:hover {
+    background: #282c31 ;
+    color: white !important;
+}
+
+.btn-close:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+@media screen and (max-width: 600px) {
+  .resp_size {
+    width: 50% !important;
+  }
+}
+
+.yaya:hover {
+  color: #dc3545 !important;
+}
+
+.table_align_center {
+  vertical-align: middle;
+}
