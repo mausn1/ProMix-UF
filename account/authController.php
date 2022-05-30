@@ -592,8 +592,8 @@ if (isset($_POST['checkout_end'])){
     $userEmail = $_SESSION['email'];
     $shooom = $_SESSION['coolkey'];
     $userName = $_SESSION['username'];
-    sendCartMail($userEmail, $products, $totalcart);
-    sendCartMailAdmin($userName, $products, $totalcart);
+    sendCartMail($userEmail, $products, $totalcart, $cool);
+    sendCartMailAdmin($userName,$cool, $products, $totalcart);
     $amazingquery = "UPDATE orders SET purchased=1 WHERE customer_id='$cool'";
     $wow = $conn->query($amazingquery);
     $amazingquery2 = "UPDATE checkout SET checkedout=1 WHERE user_id='$cool' AND randomkey='$shooom'";
@@ -607,4 +607,30 @@ if (isset($_POST['checkout_end'])){
     //2. mail function
     //3. change all of cart to purchased bool True or 1 couldve used tinyint doesnt matter.
     //4. fix cronjob to checkout false to be removed after two hours.
+}
+
+if (isset($_POST['message_btn'])){
+    $topic = trim($_POST['topic_contact']);
+    $message_contact = trim($_POST['message_contact']);
+    if(!$_SESSION['username']){
+        header("location: https://promix-uf.se/account/login");
+    }else{
+        if(empty($topic)){
+            $errors['empty_topic'] = "Meddelande måste innehålla ämne.";
+        }elseif (strlen($topic) > 100){
+            $errors['topic_long'] = "Ämnet kan inte vara mer än 100 ord.";
+        }
+        if (empty($message_contact)){
+            $errors['empty_message'] = "Meddelande måste innehålla minst 1 ord.";
+        }elseif (strlen($message_contact) > 1000){
+            $errors['message_long'] = "Meddelandet kan inte vara mer än 1000 ord.";
+        }
+    if(count($errors) === 0 ){
+        $userName = $_SESSION['username'];
+        SendMessage($userName,$cool,$topic,$message_contact);
+        $message['contact_sent'] = "Meddelandet har nu skickats!";
+        
+    }
+        
+    }
 }

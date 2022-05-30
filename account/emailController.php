@@ -119,7 +119,7 @@ function sendPasswordResetLink($userEmail, $token)
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
-        <title>Verifiera email</title>
+        <title>Reset lösenord</title>
         <style>
           .wrapper {
             padding: 20px;
@@ -188,7 +188,7 @@ function sendCartMail($userEmail, $products, $totalcart)
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
-        <title>Verifiera email</title>
+        <title>Kvitto</title>
         <style>
           .wrapper {
             padding: 20px;
@@ -215,18 +215,20 @@ function sendCartMail($userEmail, $products, $totalcart)
         </style>
       </head>
       <body>
+      <body>
         <div class="wrapper">
           <p>
             Hej där! Tack för du beställer från våran sida! Du får snart en mejl inom MAX 3 dagar för ytterligare info beroende på vilken metod du valde.
           </p>
           <div class="center">
-              <p>Du har beställt: x,y för '.$totalcart.' kr.</p>
+              <p>Du har beställt produkter för '.$totalcart.' kr. Titta vid din profil för mer info eller kontakta oss.</p>
           </div>
           <div class="center">
             <p>Vänliga hälsningar av Måns - Adminstrator hos ProMix</p>
             <p>OBS! Denna mejl svarar ej och om du har problem kan du skicka till info@promix.se</p>
           </div>
         </div>
+      </body>
       </body>
     </html>'; 
 
@@ -244,7 +246,7 @@ function sendCartMail($userEmail, $products, $totalcart)
     }
 }
 
-function sendCartMailAdmin($userName, $products, $totalcart) 
+function sendCartMailAdmin($userName, $cool, $products, $totalcart) 
 
   {
     global $mailer;
@@ -252,7 +254,7 @@ function sendCartMailAdmin($userName, $products, $totalcart)
     <html lang="en">
       <head>
         <meta charset="UTF-8" />
-        <title>Verifiera email</title>
+        <title>Info om beställning</title>
         <style>
           .wrapper {
             padding: 20px;
@@ -281,17 +283,73 @@ function sendCartMailAdmin($userName, $products, $totalcart)
       <body>
         <div class="wrapper">
           <p>
-            '.$userName.' har beställt via ProMix sidan för '.$totalcart.' kr.
+            '.$userName.' eller user '.$cool.' har beställt via ProMix sidan för '.$totalcart.' kr.
           </p>
-          <div class="center">
-              <p>De har beställt: x,y</p>
-          </div>
         </div>
       </body>
     </html>'; 
 
     $message = (new Swift_Message('Info om beställning'))
         ->setFrom([EMAIL => 'ProMix beställning'])
+        ->setTo('karlstrom112@gmail.com')
+        ->setBody($body, 'text/html');
+
+    $result = $mailer->send($message);
+
+    if ($result > 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function sendMessage($userName, $cool, $topic, $message_contact) 
+
+  {
+    global $mailer;
+    $body = '<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <title>Meddelande</title>
+        <style>
+          .wrapper {
+            padding: 20px;
+            color: black;
+            font-size: 1.3em;
+            font-family: "Lucida Console", "Courier New", monospace;
+            margin: auto;
+            text-align: center;
+          }
+          .tot {
+            background-color: lavender;
+            width: 300px;
+            border: 15px solid darkred;
+            padding: 50px;
+            margin: 20px;
+            text-align: center;
+            font-family: "Lucida Console", "Courier New", monospace;
+          }
+          .center {
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="wrapper">
+          <p>
+            '.$userName.' eller user '.$cool.' har skickat ett meddelande.
+          </p>
+          <h3>'.$topic.'</h3>
+          <p>'.$message_contact.'</p>
+        </div>
+      </body>
+    </html>';; 
+
+    $message = (new Swift_Message('Ett meddelande har skickats'))
+        ->setFrom([EMAIL => 'ProMix auto-meddelanden'])
         ->setTo('karlstrom112@gmail.com')
         ->setBody($body, 'text/html');
 
