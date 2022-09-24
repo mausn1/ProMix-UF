@@ -449,7 +449,7 @@ if (isset($_POST['addToCart1'])){
     header("location: https://promix-uf.se/account/login");}
     $quantity1 = $_POST['quantity1'];
     if ($quantity1 < 0){
-        $errors['quantity1_bad_value'] = "Försök inte ens 🖕";
+        $errors['quantity1_bad_value'] = "Försök inte ens ";
     }else{
         if ($resultpupupu->num_rows > 0){ 
             $onepu11 = "UPDATE orders SET amount=amount+'$quantity1' WHERE     customer_id='$cool' AND product_id='3' AND purchased=0";
@@ -470,7 +470,7 @@ if (isset($_POST['addToCart2'])){
     header("location: https://promix-uf.se/account/login");}
     $quantity2 = $_POST['quantity2'];
     if ($quantity2 < 0){
-        $errors['quantity2_bad_value'] = "Försök inte ens 🖕";
+        $errors['quantity2_bad_value'] = "Försök inte ens ";
     }else{
         if ($resultpu->num_rows > 0){ 
             $onepu22 = "UPDATE orders SET amount=amount+'$quantity2' WHERE     customer_id='$cool' AND product_id='1' AND purchased=0";
